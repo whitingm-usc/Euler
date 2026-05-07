@@ -1,0 +1,1156 @@
+fileFormatVersion: 2
+guid: 420e39a99bfcb4515bf49e0bb000b757
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: upgrade_1_2
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: level2_fire
+      takeName: Take 001
+      internalID: -998496362607748373
+      firstFrame: 30
+      lastFrame: 60
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: upgrade_2_3
+      takeName: Take 001
+      internalID: 3060872287085348379
+      firstFrame: 60
+      lastFrame: 90
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: level3_fire
+      takeName: Take 001
+      internalID: 6641085478485924818
+      firstFrame: 90
+      lastFrame: 120
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: upgrade_3_alt2
+      takeName: Take 001
+      internalID: -5059006814000262888
+      firstFrame: 120
+      lastFrame: 150
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: alt2_fire
+      takeName: Take 001
+      internalID: 6234510843852800090
+      firstFrame: 150
+      lastFrame: 180
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: upgrade_3_alt1
+      takeName: Take 001
+      internalID: -6788666626592393668
+      firstFrame: 200
+      lastFrame: 230
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: alt1_fire
+      takeName: Take 001
+      internalID: 1702301948168947093
+      firstFrame: 230
+      lastFrame: 260
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: upgrade_0_1
+      takeName: Take 001
+      internalID: 9093586079265926502
+      firstFrame: 300
+      lastFrame: 330
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: level1_fire
+      takeName: Take 001
+      internalID: -4045831500588228705
+      firstFrame: 330
+      lastFrame: 360
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: building_level1
+        weight: 1
+      - path: building_level1/badge_mesh
+        weight: 1
+      - path: building_level1/base_gun_mesh
+        weight: 1
+      - path: building_level1/base_mesh
+        weight: 1
+      - path: building_level1/clock_mesh
+        weight: 1
+      - path: building_level1/core_building_1
+        weight: 1
+      - path: building_level1/core_level2_mesh
+        weight: 1
+      - path: building_level1/door_mesh
+        weight: 1
+      - path: building_level1/front_vent_mesh
+        weight: 1
+      - path: building_level1/horse_tie_mesh
+        weight: 1
+      - path: building_level1/metal_door_mesh
+        weight: 1
+      - path: building_level1/pipe1_mesh
+        weight: 1
+      - path: building_level1/pipe2_mesh
+        weight: 1
+      - path: building_level1/side_vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh
+        weight: 1
+      - path: building_level1/vent_mesh1
+        weight: 1
+      - path: building_level1/window_mesh
+        weight: 1
+      - path: turret_roty
+        weight: 1
+      - path: turret_roty/gun_stand_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/big_barrel_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/fire_origin
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_aim_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_gold_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_barrel_outer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_cap_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_chamber_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_hammer_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_handle_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_sight_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/gun_tube
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/hammer_tip_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shell_back_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/shield_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting1_mesh
+        weight: 1
+      - path: turret_roty/turret_rotx/twirl__group/sighting2_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 200
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 200
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SecurityCam : MonoBehaviour
 {
@@ -23,7 +24,8 @@ public class SecurityCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Fix: Use Keyboard.current.spaceKey.wasPressedThisFrame instead of InputSystem.GetKeyDown
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             if (cameras.Count > 0)
             {

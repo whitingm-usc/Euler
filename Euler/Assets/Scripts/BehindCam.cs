@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class FollowCam : MonoBehaviour
+public class BehindCam : MonoBehaviour
 {
     public GameObject m_target;
     public Vector3 m_targetOffset;
@@ -15,12 +15,15 @@ public class FollowCam : MonoBehaviour
     public float m_collRad = 0.1f;
     public float m_distSpeed = 4.0f;
     public bool m_doQuat = false;
+    public float m_lerpRate = 0.02f;
 
     float m_distanceCurrent;
     float m_distanceOrig;
     float m_azimuth;
     float m_elevation;
+    float m_targetAzimuth;
     Quaternion m_quat;
+    Quaternion m_targetQuat;
     PlayerInput m_playerInput;
 
     public class CamInput
@@ -37,11 +40,13 @@ public class FollowCam : MonoBehaviour
         m_distanceCurrent = p.magnitude;
         m_distanceOrig = m_distanceCurrent;
         Vector3 pxz = p;
-        p.y = 0.0f;
+        pxz.y = 0.0f;
         float dxz = p.magnitude;
         m_azimuth = Mathf.Atan2(p.x, p.z);
         m_elevation = Mathf.Atan2(p.y, dxz);
+        m_targetAzimuth = m_azimuth;
         m_quat = transform.rotation;
+        m_targetQuat = m_quat;
 
         m_playerInput = GetComponent<PlayerInput>();
 
@@ -50,8 +55,16 @@ public class FollowCam : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
+    static float LerpAngle(float a, float b, float t)
+    {
+        const float twopi = 2.0f * Mathf.PI;
+        float delta = Mathf.Repeat((b - a) + Mathf.PI, twopi) - Mathf.PI;
+        return a + delta * t;
+    }
+
     private void Update()
     {
+#if false
         Vector2 look = m_playerInput.actions["Look"].ReadValue<Vector2>();
         m_input.m_pan = look.x;
         m_input.m_tilt = -look.y;
@@ -76,6 +89,13 @@ public class FollowCam : MonoBehaviour
         m_elevation = Mathf.Clamp(m_elevation, Mathf.Deg2Rad * m_tiltMin, Mathf.Deg2Rad * m_tiltMax);
         m_quat = m_quat * Quaternion.Euler(m_input.m_tilt * m_tiltSpeed, 0.0f, 0.0f);
         m_quat = Quaternion.Euler(0.0f, m_input.m_pan * m_panSpeed, 0.0f) * m_quat;
+#else
+        Vector3 fwd = m_target.transform.forward;
+        m_targetAzimuth = Mathf.Atan2(-fwd.x, -fwd.z);
+        m_azimuth = LerpAngle(m_azimuth, m_targetAzimuth, m_lerpRate);
+        m_targetQuat = Quaternion.Euler(m_elevation * Mathf.Rad2Deg, m_targetAzimuth * Mathf.Rad2Deg, 0.0f);
+        m_quat = Quaternion.Slerp(m_quat, m_targetQuat, m_lerpRate);
+#endif
     }
 
     void LateUpdate()
@@ -95,6 +115,7 @@ public class FollowCam : MonoBehaviour
             p.x = dxz * Mathf.Sin(m_azimuth);
             p.z = dxz * Mathf.Cos(m_azimuth);
 
+#if false
             // camera collisions
             Ray ray = new Ray(target, p);
             RaycastHit hitInfo;
@@ -111,6 +132,7 @@ public class FollowCam : MonoBehaviour
                 float lerp = Mathf.Clamp01(m_distSpeed * Time.deltaTime);
                 m_distanceCurrent = Mathf.Lerp(m_distanceCurrent, m_distanceOrig, lerp);
             }
+#endif
         }
 
         p += target;

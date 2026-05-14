@@ -7,7 +7,8 @@ public class Turret : MonoBehaviour
     {
         Euler,
         Quat,
-        QuatLookAt
+        QuatLookAt,
+        QuatFromEuler
     }
     public Transform rotYaw;
     public Transform rotPitch;
@@ -78,6 +79,9 @@ public class Turret : MonoBehaviour
             case AimMode.QuatLookAt:
                 AimAtQuatLookAt(targetPos);
                 break;
+            case AimMode.QuatFromEuler:
+                AimAtQuatFromEuler(targetPos);
+                break;
         }
     }
 
@@ -112,7 +116,7 @@ public class Turret : MonoBehaviour
     {
         Vector3 dir = targetPos - rotPitch.position;
         dir.Normalize();
-        Vector3 fwd = parent.forward;
+        Vector3 fwd = parent == null ? Vector3.forward : parent.forward;
         fwd.Normalize();
         Quaternion rot;
         float dot = Vector3.Dot(dir, fwd);
@@ -142,6 +146,28 @@ public class Turret : MonoBehaviour
         }
         Quaternion rot = Quaternion.LookRotation(targetPos - rotPitch.position, Vector3.up);
         LerpQuat(rotPitch, rot, lerp);
+    }
+
+    void AimAtQuatFromEuler(Vector3 targetPos)
+    {
+        Vector3 dir = targetPos - rotYaw.position;
+
+        // yaw
+        float rotY = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+
+        // pitch
+        dir = targetPos - rotPitch.position;
+        Vector3 dirXZ = new Vector3(dir.x, 0, dir.z);
+        float dXZ = dirXZ.magnitude;
+
+        float rotP = -Mathf.Atan2(dir.y, dXZ);
+        // correct for the offset to the gun tip
+        //        rotP += Mathf.Asin(yOffset / dir.magnitude);
+        rotP += Mathf.Asin(yOffset / dXZ);
+        rotP *= Mathf.Rad2Deg;
+
+        Quaternion quat = Quaternion.Euler(rotP, rotY, 0);
+        LerpQuat(rotPitch, quat, lerp);
     }
 
     void LerpQuat(Transform xform, Quaternion targetRot, float f)

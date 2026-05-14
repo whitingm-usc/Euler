@@ -32,22 +32,7 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // read WASD input
-#if false
-        Vector3 move = Vector3.zero;
-        if (Input.GetKey(KeyCode.W))
-            move.z += 1.0f;
-        if (Input.GetKey(KeyCode.S))
-            move.z -= 1.0f;
-        if (Input.GetKey(KeyCode.D))
-            move.x += 1.0f;
-        if (Input.GetKey(KeyCode.A))
-            move.x -= 1.0f;
-        move.x = Mathf.Clamp(move.x, -1.0f, 1.0f);
-        move.z = Mathf.Clamp(move.z, -1.0f, 1.0f);
-#else
         Vector2 move = m_playerInput.actions["Move"].ReadValue<Vector2>();
-#endif
 
         // read attack input
 #if false
@@ -57,8 +42,10 @@ public class Character : MonoBehaviour
 
         // convert from camera-space to world-space movement
         Vector3 fwd = Camera.main.transform.forward;
+        fwd.y = 0.0f;
         fwd.Normalize();
         Vector3 rt = Camera.main.transform.right;
+        rt.y = 0.0f;
         rt.Normalize();
         Vector3 moveWorld = move.y * fwd + move.x * rt;
         m_input.m_direction = moveWorld;

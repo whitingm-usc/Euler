@@ -14,7 +14,6 @@ public class Turret : MonoBehaviour
     public Transform rotPitch;
     public Transform gunTip;
     public GameObject target;
-    public AimMode aimMode = AimMode.Quat;
     public float m_pitchMax = 360.0f;    // degrees
     public float m_pitchMin = -360.0f;   // degrees
     public float m_yawMax = 360.0f;      // degrees
@@ -22,7 +21,7 @@ public class Turret : MonoBehaviour
     public float lerp = 0.1f;
     Transform parent;
     float yOffset;
-    AimMode oldMode;
+    AngleMode.Mode oldMode;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,17 +29,17 @@ public class Turret : MonoBehaviour
     {
         parent = rotYaw.parent;
         yOffset = gunTip.position.y - rotPitch.position.y;
-        oldMode = aimMode;
+        oldMode = AngleMode.s_mode;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (oldMode != aimMode)
+        if (oldMode != AngleMode.s_mode)
         { 
             rotYaw.localRotation = Quaternion.identity;
             rotPitch.localRotation = Quaternion.identity;
-            oldMode = aimMode;
+            oldMode = AngleMode.s_mode;
         }
         GameObject curTarget = target;
         if (null == curTarget)
@@ -72,18 +71,18 @@ public class Turret : MonoBehaviour
 
     void AimAt(Vector3 targetPos)
     {
-        switch (aimMode)
+        switch (AngleMode.s_mode)
         {
-            case AimMode.Euler:
+            case AngleMode.Mode.Euler:
                 AimAtEuler(targetPos);
                 break;
-            case AimMode.Quat:
+            case AngleMode.Mode.Quat:
                 AimAtQuat(targetPos);
                 break;
-            case AimMode.QuatLookAt:
+            case AngleMode.Mode.QuatLookAt:
                 AimAtQuatLookAt(targetPos);
                 break;
-            case AimMode.QuatFromEuler:
+            case AngleMode.Mode.QuatFromEuler:
                 AimAtQuatFromEuler(targetPos);
                 break;
         }
@@ -105,7 +104,8 @@ public class Turret : MonoBehaviour
 
         float rotP = -Mathf.Atan2(dir.y, dXZ);
         // correct for the offset to the gun tip
-        rotP += Mathf.Asin(yOffset / dir.magnitude);
+        float sinOffset = Mathf.Clamp(yOffset / dir.magnitude, -1.0f, 1.0f);
+        rotP += Mathf.Asin(sinOffset);
         rotP *= Mathf.Rad2Deg;
         rotP = Mathf.Clamp(rotP, m_pitchMin, m_pitchMax);
         LerpEulerPitch(rotPitch, rotP, lerp);
@@ -162,7 +162,8 @@ public class Turret : MonoBehaviour
 
         float rotP = -Mathf.Atan2(dir.y, dXZ);
         // correct for the offset to the gun tip
-        rotP += Mathf.Asin(yOffset / dir.magnitude);
+        float sinOffset = Mathf.Clamp(yOffset / dir.magnitude, -1.0f, 1.0f);
+        rotP += Mathf.Asin(sinOffset);
         rotP *= Mathf.Rad2Deg;
         rotP = Mathf.Clamp(rotP, m_pitchMin, m_pitchMax);
 
@@ -190,6 +191,7 @@ public class Turret : MonoBehaviour
             ang.y = Mathf.LerpAngle(ang.y, yaw, f);
         xform.localEulerAngles = ang;
     }
+
     void LerpEulerPitch(Transform xform, float pitch, float f)
     {
         Vector3 ang = xform.localEulerAngles;

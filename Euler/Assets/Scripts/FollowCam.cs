@@ -14,7 +14,7 @@ public class FollowCam : MonoBehaviour
     public float m_tiltMin = 0.0f;    // degrees
     public float m_collRad = 0.1f;
     public float m_distSpeed = 4.0f;
-    public bool m_doQuat = false;
+    bool m_doQuat = false;
 
     float m_distanceCurrent;
     float m_distanceOrig;
@@ -52,6 +52,7 @@ public class FollowCam : MonoBehaviour
 
     private void Update()
     {
+        m_doQuat = AngleMode.s_mode != AngleMode.Mode.Euler;
         Vector2 look = m_playerInput.actions["Look"].ReadValue<Vector2>();
         m_input.m_pan = look.x;
         m_input.m_tilt = -look.y;
@@ -87,6 +88,22 @@ public class FollowCam : MonoBehaviour
             transform.rotation = m_quat;
             p = new Vector3(0.0f, 0.0f, -m_distanceCurrent);
             p = m_quat * p;
+
+            // camera collisions
+            Ray ray = new Ray(target, p);
+            RaycastHit hitInfo;
+            int mask = ~LayerMask.GetMask("Player");
+            if (Physics.SphereCast(ray, m_collRad, out hitInfo, m_distanceCurrent + m_collRad, mask))
+            {
+                m_distanceCurrent = hitInfo.distance - m_collRad;
+                p = new Vector3(0.0f, 0.0f, -m_distanceCurrent);
+                p = m_quat * p;
+            }
+            else
+            {
+                float lerp = Mathf.Clamp01(m_distSpeed * Time.deltaTime);
+                m_distanceCurrent = Mathf.Lerp(m_distanceCurrent, m_distanceOrig, lerp);
+            }
         }
         else
         {
@@ -98,7 +115,8 @@ public class FollowCam : MonoBehaviour
             // camera collisions
             Ray ray = new Ray(target, p);
             RaycastHit hitInfo;
-            if (Physics.SphereCast(ray, m_collRad, out hitInfo, m_distanceCurrent + m_collRad))
+            int mask = ~LayerMask.GetMask("Player");
+            if (Physics.SphereCast(ray, m_collRad, out hitInfo, m_distanceCurrent + m_collRad, mask))
             {
                 m_distanceCurrent = hitInfo.distance - m_collRad;
                 p.y = m_distanceCurrent * Mathf.Sin(m_elevation);

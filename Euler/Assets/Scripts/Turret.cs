@@ -15,6 +15,10 @@ public class Turret : MonoBehaviour
     public Transform gunTip;
     public GameObject target;
     public AimMode aimMode = AimMode.Quat;
+    public float m_pitchMax = 360.0f;    // degrees
+    public float m_pitchMin = -360.0f;   // degrees
+    public float m_yawMax = 360.0f;      // degrees
+    public float m_yawMin = -360.0f;     // degrees
     public float lerp = 0.1f;
     Transform parent;
     float yOffset;
@@ -91,10 +95,8 @@ public class Turret : MonoBehaviour
 
         // yaw
         float rotY = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+        rotY = Mathf.Clamp(rotY, m_yawMin, m_yawMax);
         LerpEulerYaw(rotYaw, rotY, lerp);
-//        Vector3 ang = rotYaw.localEulerAngles;
-//        ang.y = rotY;
-//        rotYaw.localEulerAngles = ang;
 
         // pitch
         dir = targetPos - rotPitch.position;
@@ -103,13 +105,10 @@ public class Turret : MonoBehaviour
 
         float rotP = -Mathf.Atan2(dir.y, dXZ);
         // correct for the offset to the gun tip
-        //        rotP += Mathf.Asin(yOffset / dir.magnitude);
-        rotP += Mathf.Asin(yOffset / dXZ);
+        rotP += Mathf.Asin(yOffset / dir.magnitude);
         rotP *= Mathf.Rad2Deg;
+        rotP = Mathf.Clamp(rotP, m_pitchMin, m_pitchMax);
         LerpEulerPitch(rotPitch, rotP, lerp);
-//        ang = rotPitch.localEulerAngles;
-//        ang.x = rotP;
-//        rotPitch.localEulerAngles = ang;
     }
 
     void AimAtQuat(Vector3 targetPos)
@@ -154,6 +153,7 @@ public class Turret : MonoBehaviour
 
         // yaw
         float rotY = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+        rotY = Mathf.Clamp(rotY, m_yawMin, m_yawMax);
 
         // pitch
         dir = targetPos - rotPitch.position;
@@ -162,9 +162,9 @@ public class Turret : MonoBehaviour
 
         float rotP = -Mathf.Atan2(dir.y, dXZ);
         // correct for the offset to the gun tip
-        //        rotP += Mathf.Asin(yOffset / dir.magnitude);
-        rotP += Mathf.Asin(yOffset / dXZ);
+        rotP += Mathf.Asin(yOffset / dir.magnitude);
         rotP *= Mathf.Rad2Deg;
+        rotP = Mathf.Clamp(rotP, m_pitchMin, m_pitchMax);
 
         Quaternion quat = Quaternion.Euler(rotP, rotY, 0);
         LerpQuat(rotPitch, quat, lerp);
@@ -178,13 +178,33 @@ public class Turret : MonoBehaviour
     void LerpEulerYaw(Transform xform, float yaw, float f)
     {
         Vector3 ang = xform.localEulerAngles;
-        ang.y = Mathf.LerpAngle(ang.y, yaw, f);
+        if (m_yawMin > -180.0f || m_yawMax < 180.0f)
+        {   // don't cross the 180 degree boundary if we have limits that are less than 360 degrees.
+            if (ang.y > 180.0f)
+                ang.y -= 360.0f;
+            if (ang.y < -180.0f)
+                ang.y += 360.0f;
+            ang.y = Mathf.Lerp(ang.y, yaw, f);
+        }
+        else
+            ang.y = Mathf.LerpAngle(ang.y, yaw, f);
         xform.localEulerAngles = ang;
     }
     void LerpEulerPitch(Transform xform, float pitch, float f)
     {
         Vector3 ang = xform.localEulerAngles;
-        ang.x = Mathf.LerpAngle(ang.x, pitch, f);
+        if (m_pitchMin > -180.0f || m_pitchMin < 180.0f)
+        {   // don't cross the 180 degree boundary if we have limits that are less than 360 degrees.
+            if (ang.x > 180.0f)
+                ang.x -= 360.0f;
+            if (ang.x < -180.0f)
+                ang.x += 360.0f;
+            ang.x = Mathf.Lerp(ang.x, pitch, f);
+        }
+        else
+        {
+            ang.x = Mathf.LerpAngle(ang.x, pitch, f);
+        }
         xform.localEulerAngles = ang;
     }
 }

@@ -85,7 +85,7 @@ public class EulerSteer : MonoBehaviour
 
         float sintheta = Mathf.Sin(m_euler.x * Mathf.Deg2Rad);
         float costheta = Mathf.Cos(m_euler.x * Mathf.Deg2Rad);
-        if (Mathf.Abs(costheta) < 0.001f)
+        if (Mathf.Abs(costheta) < 0.00001f)
         {   // at the poles, just put it all into phi_dot, and ignore psi_dot.
             costheta = 0.001f * Mathf.Sign(costheta);
             phi_dot = p + r;

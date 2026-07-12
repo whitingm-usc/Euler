@@ -2252,6 +2252,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_walkSpeed: 4
   m_turnSpeed: 720
+  m_jumpSpeed: 16
+  m_gravity: 40
 --- !u!143 &1579211850
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2276,7 +2278,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Center: {x: 0, y: 0.88, z: 0}
 --- !u!114 &1579211851
 MonoBehaviour:
   m_ObjectHideFlags: 0

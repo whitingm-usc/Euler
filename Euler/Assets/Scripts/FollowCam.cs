@@ -15,14 +15,12 @@ public class FollowCam : MonoBehaviour
     public float m_tiltMin = 0.0f;    // degrees
     public float m_collRad = 0.1f;
     public float m_distSpeed = 4.0f;
-    public float m_lookAhead = 2.0f;
     bool m_doQuat = false;
 
     float m_distanceCurrent;
     float m_distanceOrig;
     float m_azimuth;
     float m_elevation;
-    Vector3 m_lookAheadVec;
     Quaternion m_quat;
     PlayerInput m_playerInput;
 
@@ -49,7 +47,7 @@ public class FollowCam : MonoBehaviour
         m_playerInput = GetComponent<PlayerInput>();
 
         m_input = new CamInput();
-        Cursor.lockState = CursorLockMode.Locked;
+//        Cursor.lockState = CursorLockMode.Locked;
         Application.targetFrameRate = 60;
     }
 
@@ -144,26 +142,7 @@ public class FollowCam : MonoBehaviour
             else
                 transform.LookAt(target, Vector3.up);
 #else
-            // Look ahead
-            Vector3 lookTarget = m_lookAhead * m_target.transform.forward + target;
-            Ray ray = new Ray(target, lookTarget);
-            RaycastHit hitInfo;
-            int mask = ~LayerMask.GetMask("Player");
-            if (Physics.SphereCast(ray, m_collRad, out hitInfo, m_lookAhead + m_collRad, mask))
-            {
-                lookTarget = hitInfo.point;
-            }
-            lookTarget -= target;
-            m_lookAheadVec = Vector3.Lerp(m_lookAheadVec, lookTarget, 0.1f);
-            lookTarget = m_lookAheadVec + target;
-            Vector3 toLook = p - lookTarget;
-            Vector3 toLookXZ = toLook;
-            toLookXZ.y = 0.0f;
-            float dxz = toLookXZ.magnitude;
-            float az = Mathf.Atan2(toLook.x, toLook.z);
-            float el = Mathf.Atan2(toLook.y, dxz);
-
-            Vector3 ang = new Vector3(Mathf.Rad2Deg * el, 180.0f + Mathf.Rad2Deg * az, 0.0f);
+            Vector3 ang = new Vector3(Mathf.Rad2Deg * m_elevation, 180.0f + Mathf.Rad2Deg * m_azimuth, 0.0f);
             transform.localEulerAngles = ang;
 #endif
         }

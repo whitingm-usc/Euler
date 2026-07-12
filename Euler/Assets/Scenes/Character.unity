@@ -119,6 +119,112 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &23243842
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 159122501}
+    m_Modifications:
+    - target: {fileID: 7233432972513552933, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_scene
+      value: Gimbal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8252929349267935920, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+      propertyPath: m_Name
+      value: SwitchScene
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+--- !u!224 &23243843 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7946386028659166308, guid: be51e8da69ff7c043b0a12a45700b104, type: 3}
+  m_PrefabInstance: {fileID: 23243842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &60830634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,6 +426,7 @@ RectTransform:
   m_Children:
   - {fileID: 726298664}
   - {fileID: 1377573351}
+  - {fileID: 23243843}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -928,7 +1035,6 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
-  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1027,11 +1133,10 @@ MonoBehaviour:
   m_mouseSensitivity: 0.001
   m_panSpeed: 180
   m_tiltSpeed: 180
-  m_tiltMax: 80
+  m_tiltMax: 120
   m_tiltMin: -20
   m_collRad: 0.3
   m_distSpeed: 4
-  m_lookAhead: 1
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,29 +1167,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &963194231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6829aed2c30ffac42b92b5869b816658, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_target: {fileID: 1579211846}
-  m_targetOffset: {x: 0, y: 1.6, z: 0}
-  m_mouseSensitivity: 0.005
-  m_panSpeed: 180
-  m_tiltSpeed: 180
-  m_tiltMax: 60
-  m_tiltMin: -20
-  m_collRad: 0.1
-  m_distSpeed: 4
-  m_doQuat: 0
-  m_lerpRate: 0.02
 --- !u!1 &991103527
 GameObject:
   m_ObjectHideFlags: 0

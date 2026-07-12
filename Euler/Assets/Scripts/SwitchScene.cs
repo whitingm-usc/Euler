@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class SwitchScene : MonoBehaviour
 {
@@ -16,5 +17,11 @@ public class SwitchScene : MonoBehaviour
                 UnityEngine.SceneManagement.SceneManager.LoadScene(m_scene);
             });
         }
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current != null && Keyboard.current.escapeKey.isPressed)
+            Application.Quit();
     }
 }
